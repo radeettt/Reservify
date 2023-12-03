@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjekUAS"
+        tools:targetApi="31">
+        <activity
+            android:name=".CinemaSelect.CinemaSelect"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Ticketing.DepokActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Ticketing.JakartaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Ticketing.Cinema"
+            android:exported="false" />
+        <activity
+            android:name=".Setting.Setting"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Payment.TransactionReceipt"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Payment.PaymentMethods"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Payment.PaymentSuccess"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Ticketing.BuyTicket"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Ticketing.Seat"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Payment.PurchaseHistory"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Ticketing.Home"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Register.Register"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Login.Login"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Upcoming.Upcoming"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

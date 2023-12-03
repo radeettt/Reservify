@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Login">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="294dp"
+        android:layout_height="148dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/loginreq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="281dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_hover"
+            android:fontFamily="@font/poppins"
+            android:hint="Username"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="281dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_hover"
+            android:fontFamily="@font/poppins"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="goToHomeScreen"
+            android:text="Log In"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Didn't have an account?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginreq"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="Register"
+        android:textColor="#4F06A6"
+        android:textStyle="bold"
+        android:onClick="goToRegister"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/loginreq"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="506dp"
+        android:layout_height="283dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ombak" />
+</androidx.constraintlayout.widget.ConstraintLayout>

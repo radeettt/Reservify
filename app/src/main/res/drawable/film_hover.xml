@@ -1,0 +1,9 @@
+<!-- hover_effect.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <color android:color="#80A5A5A5" /> <!-- 50% opacity -->
+    </item>
+    <item>
+        <color android:color="@android:color/transparent" />
+    </item>
+</selector>

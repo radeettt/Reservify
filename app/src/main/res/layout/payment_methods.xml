@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Payment.PaymentMethods">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearjudul">
+                <!-- Judul Halaman -->
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="backtoseat"
+                    app:srcCompat="@drawable/backbutton" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="16dp"
+                    android:text="Select Payment Method"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+
+            <!-- Card Profile -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewTRDetails"
+                android:layout_below="@+id/linearjudul"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:padding="16dp"
+                android:background="@drawable/card_detail">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/card_detail"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:visibility="visible"
+                    tools:visibility="visible">
+
+                    <!-- Foto Profil -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewdetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transaction Details"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <TableLayout
+                            android:id="@+id/tabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tickets"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_medium"/>
+
+                                <TextView
+                                    android:id="@+id/tickets"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_medium"/>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_medium"/>
+
+                                <TextView
+                                    android:id="@+id/price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_medium"/>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Price"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_medium"/>
+
+                                <TextView
+                                    android:id="@+id/total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="      Rp75.000"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_medium"/>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewTRDetails"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButtonDana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:src="@drawable/dana_selector" />
+                <ImageButton
+                    android:id="@+id/imageButtonMandiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/mandiri"/>
+                <ImageButton
+                    android:id="@+id/imageButtonBCA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/bca"/>
+                <ImageButton
+                    android:id="@+id/imageButtonBNI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/bni"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/btn_buyticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#009647FE"
+        android:src="@drawable/purchase"
+        android:layout_alignParentBottom="true"
+        android:onClick="paymentsuccess"/>
+</RelativeLayout>

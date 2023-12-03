@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Payment.PurchaseHistory">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearjudul">
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/backbutton"
+                    android:onClick="backtosetting"/>
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="16dp"
+                    android:text="Purchase History"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewListTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LIST OF YOUR TRANSACTION"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/poppins_bold"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewProfile"
+                android:layout_below="@id/textViewListTransaction"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:onClick="gotoreceipt"
+                    android:background="@drawable/receipt_selector">
+
+                    <!-- Foto Profil -->
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/hunger" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="30dp">
+
+                        <!-- Nama -->
+                        <TextView
+                            android:id="@+id/textViewFilm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THE HUNGER GAMES: THE BALLAD OF SONGBIRDS AND SNAKES"
+                            android:textColor="#CFAB7A"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <!-- Email -->
+                        <TextView
+                            android:id="@+id/textViewPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="CINERE BELLEVUE XXI"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Minggu, 26 Nov 2023, 12:00"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"/>
+
+                        <TextView
+                            android:id="@+id/textViewAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3 Tickets"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="37px"
+            android:layout_marginRight="20px"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/home"
+            android:onClick="goToHome"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="30px"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/cinema"
+            tools:layout_editor_absoluteX="92dp"
+            android:onClick="goToCinema"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="20px"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.566"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/upcoming"
+            android:onClick="goToUpcoming"/>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/setting_purple"
+            android:onClick="goToSetting"/>
+    </LinearLayout>
+</RelativeLayout>

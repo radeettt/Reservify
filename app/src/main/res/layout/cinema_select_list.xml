@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:onClick="gotobuyticket"
+            android:background="@drawable/receipt_selector">
+
+            <ImageView
+                android:id="@+id/Image1"
+                android:layout_width="110dp"
+                android:layout_height="145dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFilm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="THE HUNGER GAMES: THE BALLAD OF SONGBIRDS AND SNAKES"
+                    android:textColor="#CFAB7A"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="12dp">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Genres"
+                            android:textColor="#737373"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Duration"
+                            android:textColor="#737373"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Age Rating"
+                            android:textColor="#737373"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_genres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Action, Adventure"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_duration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="2 Hour 37 Minutes"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:text="R 13+"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="7dp"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/hour_pa"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded2"
+                        android:padding="1dp"
+                        android:text="12:00"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/hour_li"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded2"
+                        android:padding="1dp"
+                        android:text="14:45"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/hour_nam"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded2"
+                        android:padding="1dp"
+                        android:text="17:45"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

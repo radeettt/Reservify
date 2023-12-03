@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".Setting.Setting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/backbutton"
+                    android:onClick="backtohistory"/>
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="16dp"
+                    android:text="Your Receipt"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearjudul">
+
+                <ImageView
+                    android:id="@+id/imageViewReceipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearjudul"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/receipt" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewProfile"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewListTransaction"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="160dp"
+                    android:padding="16dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <!-- Foto Profil -->
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/hunger" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:orientation="vertical">
+
+                            <!-- Nama -->
+                            <TextView
+                                android:id="@+id/textViewFilm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THE HUNGER GAMES: THE BALLAD OF SONGBIRDS AND SNAKES"
+                                android:textColor="#CFAB7A"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <!-- Email -->
+                            <TextView
+                                android:id="@+id/textViewPlace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="CINERE BELLEVUE XXI"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textViewDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Minggu, 26 Nov 2023, 12:00"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textViewAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="3 Tickets"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

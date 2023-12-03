@@ -1,0 +1,13 @@
+<!-- res/drawable/rounded.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="5dp" /> <!-- Jari-jari sudut (menentukan seberapa melengkung) -->
+    <stroke
+        android:color="#4F06A7"
+        android:width="2dp" />
+    <solid android:color="#509266CB" /> <!-- Warna latar belakang -->
+
+    <!-- Tambahkan width dan height sesuai kebutuhan -->
+    <size
+        android:width="60dp"
+        android:height="30dp" />
+</shape>

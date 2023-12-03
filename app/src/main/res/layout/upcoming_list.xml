@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_background">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:background="@drawable/rounded_background">
+
+            <ImageView
+                android:id="@+id/ImageUp"
+                android:layout_width="100dp"
+                android:layout_height="145dp"
+                android:src="@drawable/hungergames"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/textViewFilmUp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="THE HUNGER GAMES: THE BALLAD OF SONGBIRDS AND SNAKES"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_tipeUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2D"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="18dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_ageUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R13+"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

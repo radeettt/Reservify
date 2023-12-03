@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ticketing.Cinema">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/map">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:inputType="none"
+            android:text="JAKARTA"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bassura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="BASSURA XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/bassura"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/bloksquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="BLOK M SQUARE"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bassura" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/bloksquare"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/blokm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="BLOK M XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bloksquare" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/blokm"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/epicentrum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="EPICENTRUM XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blokm" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/epicentrum"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/gancit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="GANDARIA CITY XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/epicentrum" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/gancit"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="HOLLYWOOD XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gancit" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/ph"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/kalibata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="KALIBATA XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/kalibata"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/kemvil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="KEMANG VILLAGE XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kalibata" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/kemvil"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/kokasprem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="KOTA KASABLANKA PREMIERE"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kemvil" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/kokasprem"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/kokas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="KOTA KASABLANKA XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kokasprem" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/kokas"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/obpprem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="ONE BELPARK PREMIERE"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kokas" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/obpprem"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/obp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="ONE BELPARK XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/obpprem" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/obp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/senci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="SENAYAN CITY XXI"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/obp" />
+
+            <!-- Garis pemisah -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@+id/senci"
+                tools:layout_editor_absoluteX="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="37px"
+            android:layout_marginRight="20px"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/homeputih"
+            android:onClick="goToHome"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="30px"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/cinema_purple"
+            tools:layout_editor_absoluteX="92dp"
+            android:onClick="goToCinema"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="20px"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.566"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/upcoming"
+            android:onClick="goToUpcoming"/>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/setting"
+            android:onClick="goToSetting"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

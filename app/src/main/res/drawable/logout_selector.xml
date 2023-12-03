@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <color android:color="#4CFF0000" /> <!-- Warna ketika tombol ditekan dengan transparansi 30% -->
+    </item>
+    <item>
+        <color android:color="@android:color/transparent" /> <!-- Warna default -->
+    </item>
+</selector>

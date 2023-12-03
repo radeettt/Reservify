@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp" /> <!-- Mengatur sudut menjadi rounded -->
+            <solid android:color="#A5A5A5" /> <!-- Warna saat tombol ditekan -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp" /> <!-- Mengatur sudut menjadi rounded -->
+            <solid android:color="#4F06A7" /> <!-- Warna normal saat tidak ditekan -->
+        </shape>
+    </item>
+</selector>
